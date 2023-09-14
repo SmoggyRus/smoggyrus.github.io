@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background: url("../img/fon.png");
+
+    font-family: 'Caveat', cursive;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.card {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -15px 10px 10px #8f8e8e;
+    border-radius: 10px;
+}
+/*Размеры слайдера*/
+.slider{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 10px solid cadetblue;
+    border-radius: 15%;
+}
+/*Позиция слайдера*/
+.middle{
+    position: relative;
+    left: -8px;
+}
+/*Блок кнопок(размеры,местоположение кнопок)*/
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    /*Компенсирует положение кнопок по оси Х*/
+    transform: translateX(-50%);
+    display: flex;
+}
+/*Стили для кнопок*/
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor:pointer;
+    background-color: cadetblue;
+    opacity: 1;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+/*Анимация при наведении на кнопки*/
+.bar:hover{
+    opacity: .2;
+    transform: scale(1.1);
+}
+/*Прячем input*/
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+/*Блок слайдов(все фотки находятся сбоку, но их не видно)*/
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+/*Фотки занимают всю территорию, которая им даётся*/
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+/*Отвечает за переключение, обращаемся к элементам r, при нажатии меняется фотка*/
+#r1:checked ~ .s1 {
+    margin-left:0%
+}
+#r2:checked ~ .s1 {
+    margin-left:-25%
+}
+#r3:checked ~ .s1 {
+    margin-left:-50%
+}
+/*Заголовок*/
+.card-title{
+    font-size: 40px;
+    text-align: center;
+    color: cadetblue;
+}
+.card-text{
+    font-size: 15px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Oswald', sans-serif;    
+}
+.card-subtitle{
+    font-size: 25;
+    color:cadetblue
+}
+.card-list{
+    padding-left: 0;
+    list-style-position: inside; 
+    font-size: 15px;
+}
+#more {
+    display: none;
+  }
+.pdbr{
+    font-family: 'Caveat', cursive;
+    font-family: 'Oswald', sans-serif;
+    width: 150px;
+    height: 50px;
+    color: cadetblue;
+    border-radius: 15px;
+    border-color: cadetblue;
+}

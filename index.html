@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/show-more.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <title> Резюме </title>
+    </head>
+    <body>
+        <div class="panel"></div>
+        <div class="card">
+
+            <div class="slider middle">
+
+                <div class="slides">
+
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+
+                        <div class="slide s1"><img src="img/1.jpg" alt=""></div>
+                        <div class="slide"><img src="img/2.jpg" alt=""></div>
+                        <div class="slide"><img src="img/3.jpg" alt=""></div>
+                </div>
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                </div>
+            </div>
+        <h1 class="card-title">Пухов Руслан Романович</h1>
+        <div class="card-text">
+            <p>Родился 28.10.2000,живу в городе Челябинск.Имею образование в 11 классов, на данный момент обучаюсь на заочной форме обучения в ЮУрГУ по специальности "Прикладная информатика", 4 курс </p>
+            <p>Планирую поступить на курс "Web Development" от GIGASCHOOL.
+        </div>
+         <span id="dots"></span>               
+         <span id="more">              
+        <h2 class="card-subtitle">Мои навыки:</h2>
+        <ul class="card-list">
+            <li>C#,C++,VisualBasic</li>
+        <h2 class="card-subtitle">Изучаю:</h2>
+        <li> HTML CSS </li>
+        <li> PHP </li>
+        <li> JavaScript </li>
+        </ul>
+        <h2 class="card-subtitle">Мои контакты:</h2>
+        <p> Телефон: <a href="tel:+79030888579">+7(903)088-85-79</a> </p>
+        <p> E-mail: <a href="mailto:puhov.r6@gmail.com">puhov.r6@gmail.com</a> </p>
+        <p>Telegram: <a href="tg://resolve?domain=evillnel">evilnell</a> </p>
+        </span>
+        <button class="pdbr" id="btn" onclick="ReadMore()">Подробнее</button> </p>
+        </div>
+    </body>
+</html>
